@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: lightcoral;
+            height: 900px;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: lightsteelblue;
+            border: 2px solid black;
+            height: 600px;
+            width: 850px;
+            margin: 5px;
+            padding: 5px;
+
+            /* this is normal shadow method  */
+            /* box-shadow: 8px -8px black;*/
+
+            /* this is blur radius shadow  */
+            /* box-shadow: 15px 15px 15px black; */
+
+            /* this is spread radius shadow  */
+            /* box-shadow: 15px 15px 15px 45px black; */
+
+            /* ab shadow inside ho jayega inset se  */
+            /* box-shadow: inset 15px 15px 15px darkred; */
+            
+            box-shadow: 15px 15px 15px black,-15px -15px 15px black;
+        }
+        img{
+            height: 300px;
+        }
+        h2{
+            /* this is text shadow and it is also same as box shadow  */
+            text-shadow: 12px 12px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+            <img src="PP.jpeg" alt="">
+            <h2>Piyush Hazari</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+                asperiores, voluptatem eos sapiente laboriosam nobis error obcaecati
+                ipsum exercitationem iure iste recusandae quae autem voluptatum dolores
+                atque esse sit mollitia architecto. Ab, itaque iure tenetur iusto 
+                laboriosam, rerum ea officiis adipisci corporis, ullam architecto 
+                dicta laudantium commodi harum sit. Voluptatibus at architecto 
+                similique suscipit sunt. Ipsa consequatur placeat a asperiores 
+                maiores similique error quibusdam voluptatibus aliquam soluta adipisci
+                saepe, labore enim dolorum, fugit blanditiis cumque voluptate! Amet
+                rem debitis recusandae, beatae nostrum dignissimos numquam, autem 
+                fficia natus neque impedit quo assumenda, facere repellat consequatur
+                inventore quaerat ea ab provident molestias quidem eum ad modi? Et
+                necessitatibus nam cum iste? Veniam eligendi harum, assumenda dolore
+                possimus iure non, totam voluptatum quas et sit. Cum accusantium 
+                libero dignissimos architecto velit nisi, doloribus ducimus,adipisci 
+                alias ipsam perferendis quaerat officiis blanditiis ea qui necessitatibus
+                , dolorum repellat asperiores? Dolorum distinctio molestias molestiae
+                minima eligendi vitae nihil alias atque ex, nostrum non voluptatum dolore
+                iusto ad tenetur nisi recusandae sunt illum dolores! Enim fugiat harum 
+                expedita rem unde consequuntur vel, sunt quo eaque beatae quibusdam. 
+                Maxime, aut minima possimus deleniti iste repudiandae odit sequi cum 
+                impedit excepturi! Odio, voluptates quisquam adipisci rem incidunt 
+                aliquam a.</p>
+        </div>
+    </div>
+</body>
+</html>

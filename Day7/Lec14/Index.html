@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: rgb(228, 247, 253);
+            height: 1000px;
+            width: 1000px;
+            margin: 20px;
+            border: 2px solid black;
+            /* display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; */
+        }
+        .recipe{
+            background-color: gray;
+            height: 800px;
+            width: 947px;
+            margin: 20px;
+            padding: 10px;
+        }
+        .div1{
+            background-color: yellow;
+            height: 200px;
+            width: 840px;
+            margin:47px;
+            /* padding: 10px; */
+            
+        }
+        .div2{
+            background-color: blue;
+            height: 200px;
+            width: 840px;
+            margin:47px;
+        }
+        .div3{
+            background-color: green;
+            height: 200px;
+            width: 840px;
+            margin: 47px;
+        }
+        img{
+            height: 170px;
+            margin: 10px;
+        }
+        .nav{
+            background-color: #0093E9;
+            background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            justify-content: center;
+            height: 80px;
+            color: white;
+        }
+        #navlist{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            font-size: 2rem;
+        }
+        a{
+            /* iss underline hata skte hai hum  */
+            text-decoration: none;
+            color: white;
+        }
+        #anchorgap{
+            display: flex;
+            gap: 20px;
+        }
+        .footer{
+            background-image: -webkit-linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+            background-image: -moz-linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+            background-image: -o-linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+            text-align: center;
+            height: 35px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="nav">
+                <nav>
+                    <ul id="navlist">
+                        <li>
+                            <p><b>Piyush Misthan Bhandar</b></p>
+                        </li>
+                        <li>
+                            <div id="anchorgap">
+                                <a href="#"><b>Home</b></a>
+                                <a href="#"><b>Contact</b></a>
+                                <a href="#"><b>About</b></a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <main>
+                <div class="recipe">
+                    <div class="div1">
+                        <table>
+                            <tr>
+                                <td>
+                                    <h2>this</h2>
+                                    <p>this is the 
+                                        Ingredients of gulab jamun and alll</p>
+                                    <p>this is the recipe </p>
+                                </td>
+                                <td>
+                                    <img src="image.png" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="div2"></div>
+                    <div class="div3"></div>
+                </div>
+            </main>
+            <footer>
+                <div class="footer">
+                    <p>Copyright 	&#169; Piyush Misthan Bhandar pvt limited 2024 All Rights Reserved</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

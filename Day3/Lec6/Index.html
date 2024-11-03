@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        .parent{
+            background-color: yellow;
+            border: 2px solid black;
+            width: 50%;
+        }
+        .child{
+            background-color: aqua;
+            border: 2px solid rgb(235, 58, 58);
+
+            /* ye body ka 50 % le raha hai aur body to pura line ka width leta hai na  */
+            width: 50%;
+        }
+        .viewport{
+            background-color: blueviolet;
+            margin-top: 5px;
+            height: 50vh;
+            width: 50vw;
+        }
+
+        /* em is related to his parent class if the size is 10px in parent class 
+        then 1 em = 10px hoga  */
+        .em{
+            font-size: 100px;
+        }
+        .emchild{
+            background-color: chocolate;
+            font-size: 1rem;
+        }
+
+        /* rem depneds on root element which is here is html and his size is 16px */
+        .rem{
+            border: solid 3px black;
+            font-size: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">CHILD</div>
+    </div>
+    <div class="viewport">Viewport vh:- for height vw:- for width</div>
+    <div class="em">
+        <div class="emchild">Relativeunits Of rem</div>
+    </div>
+    <div class="rem">Rem</div>
+</body>
+</html>

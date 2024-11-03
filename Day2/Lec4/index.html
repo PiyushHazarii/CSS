@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            background-color: yellow;
+            border: solid 5px;
+
+            width: 300px;
+            height: 100px;
+
+            padding: 4px;
+            margin: 30px;
+
+            /* agar p ko hame inline banana hai then we use  */
+            /* display: inline; */
+        }
+        .first{
+            background-color: yellow;
+            /* ye krne se humara actual box ke size mein change nai ayega bus 
+            content change hoga jaise krna chahe hum waise */
+            box-sizing: border-box;
+            border: solid 5px;
+            width: 300px;
+            height: 100px;
+            padding: 5px;
+            margin: 10px;
+        }
+        span{
+            background-color: bisque;
+            border: 3px solid green;
+
+            /* doesnot apply on inline element height and width  */
+            width: 500px;
+            height: 50px;
+
+            /* we cannot put margin */
+            margin: 20px;
+
+            /*but we put padding in inline element */
+            padding: 2px;
+
+            /* if you want to add and use these above features then */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+        quibusdam itaque adipisci ipsam atque minima nesciunt voluptate voluptatum,
+        ducimus similique.</p>
+
+    <p class="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit.In quia
+        perspiciatisfacilis eos ea illum! Voluptas nobis similique nisi possimus
+        doloremque delectus perferendis! A sequi, enim id esse labore soluta?</p>
+    
+
+    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.In quia
+        perspiciatisfacilis eos ea illum! Voluptas nobis similique nisi possimus
+        doloremque delectus perferendis! A sequi, enim id esse labore soluta?</span>
+
+</body>
+</html>

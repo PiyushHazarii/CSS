@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+            /* iske wajah se jab shrink karenge to overflow nahi hoga thoda bhi  */
+            overflow: auto;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: -webkit-linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+            background-image: -moz-linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+            background-image: -o-linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+            background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+            height: 100vh;
+        }
+        .box{
+            background-color: rgb(127, 212, 212);
+            height: 800px;
+            width: 600px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            box-shadow: 8px 8px 10px 1px white, -8px -8px 10px 1px white;
+            border-radius: 30px;
+        }
+        img{
+            height: 450px;
+            width: 350px;
+            margin: 0;
+            /* border: 2px solid black; */
+            /* border-radius: 30px; */
+            /* margin-bottom: 10px; */
+        }
+        h2{
+            margin: 15px;
+        }
+        p{
+            margin: 10px;
+            /* text-shadow: white 2px; */
+        }
+        .image{
+            box-shadow: 8px 8px 10px 1px black, -8px -8px 10px 1px black;
+            border-radius: 30px;
+            transition: all 0.6s linear 0s;
+        }
+        .image:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="image">
+                <img src="bread-gulab-jamun-recipe.jpg" alt="">
+            </div>
+            <h2>This is a Gulab Jamun</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ullam placeat sint soluta, similique ut cupiditate quibusdam? Doloribus repudiandae voluptates aperiam, minima perferendis labore numquam voluptatem cupiditate dolores rem iste esse similique incidunt provident expedita, fuga, quis earum officia reprehenderit ad? Tempora, consequuntur consectetur repellat praesentium esse odit eum fugit excepturi! Dicta iure ducimus quo vel quae, quam suscipit. Et expedita debitis itaque excepturi amet, veniam, culpa minima odit tenetur maxime officia enim, maiores dignissimos sint nemo. Quia iusto exercitationem accusamus illo, facilis ea distinctio tenetur placeat aspernatur officiis consequuntur mollitia ratione recusandae nihil, rem a explicabo nesciunt at totam.</p>
+        </div>
+    </div>
+</body>
+</html>

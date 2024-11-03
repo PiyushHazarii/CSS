@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: lightgreen;
+            border: 2px solid black;
+            height: 400px;
+            width: 400px;
+        }
+
+        /* agar screen ka size 800px se bada hai to ye lagega nahi to 
+           jo normal diye hai uparyellow green color wo apply hoga */
+        /* @media (min-width:500px){
+            .box{
+                background-color: yellow;
+            }
+        } */
+
+        /* i have given the range of from 300 to 500 */
+        @media (min-width:300px) and (max-width:500px){
+            .box{
+                background-color: yellow;
+            }
+        }
+        .container{
+            background-color: yellow;
+            border: 3px solid black;
+            margin: 5px;
+            padding: 5px;
+            height: 1000px;
+            display: flex;
+        }
+        .box{
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+            margin: 5px;
+            padding: 5px;
+        }
+        #box1{
+            background-color: rgb(128, 96, 0);
+        }
+        #box2{
+            background-color: burlywood;
+        }
+        #box3{
+            background-color: red;
+        }
+        #box4{
+            background-color: purple;
+        }
+        /* iska matlab 0 se 500 tak maximum */
+        @media (max-width:500px){
+            .container{
+                background-color: rgb(233, 49, 224);
+                flex-direction: column;
+            }
+        }
+        /* iska matlab 500 se infinity tak  */
+        @media (min-width:500px){
+            .container{
+                background-color: green;
+                flex-direction: row;
+            }
+        }
+
+        .div{
+            background-color: beige;
+            border: 2px solid black;
+            display: flex;
+            height: 420px;
+            width: 700px;
+            padding: 25px;
+        }
+        .left{
+            background-color: lightcoral;
+            border: 3px solid red;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 10px;
+            padding: 10px;
+        }
+        .right{
+            background-color: lightcyan;
+            border: 3px solid black;
+        }
+        img{
+            height: 400px;
+            width: 300px;
+        }
+        p{
+            border: 2px black solid;
+            background-color: gray;
+        }
+        @media (max-width:600px){
+            .div{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Hello Ji</div>
+    <div class="container">
+        <div class="box" id="box1"> <b>BOX1</b></div>
+        <div class="box" id="box2"><b>BOX2</b></div>
+        <div class="box" id="box3"><b>BOX3</b></div>
+        <div class="box" id="box4"><b>BOX4</b></div>
+    </div>
+    <div class="div">
+        <div class="left">
+            <p>Text One</p>
+            <p>Text Two</p>
+        </div>
+        <div class="right">
+            <img src="PP.jpeg" alt="">
+        </div>
+    </div>
+</body>
+</html>

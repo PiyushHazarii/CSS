@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: lightgray;
+            height: 1000px;
+            border: 3px solid black;
+
+        }
+        .box{
+            background-color: pink;
+            height: 100px;
+            width: 400px;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 20px; 
+            
+            position: relative;
+            animation: rightMovement;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            /* animation-delay: 2s; */
+
+            /* without animation timing function the box will move fast or slow / */
+            animation-timing-function: linear;
+
+            /* animation-timing-function: cubic-bezier(0.1,0.7,1.0,0.1); */
+
+            /* isse hum animation pe ched chad kr skte hai jaise ki 
+            abhi hamara box sirf jaa raha hai wapas nhi aa raha hai but niche alternate
+            krne se hoga wo */
+            animation-direction: alternate;
+
+
+            /* matlab ye hoga ki jab bhi mera box last iteration karega wo ruk jayega
+            last mein agar forwards daalte hai to and backwords to iska default hai*/
+            /* animation-fill-mode: forwards; */
+        }
+        @keyframes rightMovement {
+            from {
+                top: 0;
+                left: 0;
+            }
+
+            to {
+                top: 0;
+                left: 1400px;
+            }
+        }
+        .bro{
+            background-color: pink;
+            height: 100px;
+            width: 400px;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 20px; 
+            
+            position: relative;
+            animation: leftMovement;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            /* animation-delay: 2s; */
+
+            animation-timing-function: linear;
+
+            animation-direction: alternate;
+        }
+        @keyframes leftMovement {
+            from {
+                top: 70%;
+                left: 0;
+            }
+
+            to {
+                top: 70%;
+                left: 1400px;
+            }
+        }
+        .circle{
+            background-color: yellow;
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 2000px; 
+            
+            position: relative;
+            animation: circleMovement;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            /* animation-delay: 2s; */
+
+            animation-timing-function: linear;
+
+            animation-direction: alternate;
+        }
+        @keyframes circleMovement {
+            0%{
+                top: 1%;
+                left: 5%;
+            }
+            25%{
+                top: 45%;
+                left:90%
+            }
+            50%{
+                top: 45%;
+                left: 1%;
+            }
+            75%{
+                top: 1%;
+                left: 90%;
+            }
+            100%{
+                top: 1%;
+                left: 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="bro"></div>
+        <div class="circle"></div>
+    </div>
+</body>
+</html>
+

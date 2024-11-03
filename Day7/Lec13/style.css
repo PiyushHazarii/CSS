@@ -1,0 +1,35 @@
+.box{
+    background-color: yellow;
+    border: 3px black solid;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    transition:all 2s linear;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+p{
+    font-size: 35px;
+}
+.box:hover{
+    /* rotate karega 45 degree  */
+    /* transform: rotate(45deg); */
+
+    /* isse bada ya chota hoga  */
+    /* transform: scale(2); */
+
+    /* isse theda medha hoga  */
+    /* transform: skew(45deg); */
+
+    /* isse move karega idhar udhar  */
+    transform: translate(150px, 150px);
+}

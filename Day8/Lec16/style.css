@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    overflow: auto;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid black;
+    display: grid;
+    padding: 4rem;
+
+    /* this is the long property of row and column both  */
+    /* row-gap: 2rem;
+    column-gap: 2rem; */
+
+    gap: 1rem;
+    /* isse hum row and column decide krte hai uska size batate hai aur ban jata hai  */
+    /* grid-template-rows: 1fr 1fr; */
+
+    /* upar wala bhi same hai and niche wala bhi same hai ye shortcut hai */
+   
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,1fr);
+
+}
+.item{
+    background-color: rgb(1, 106, 8);
+    border: 5px solid black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+
+@media (min-width:600px) {
+    .container{
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* hum yaha pe sab kuch daale hai kyuki hum chahte hai ki jab width 600 ya usse 
+    zyda rahe to ye wala property apply ho  */
+    .header, .footer{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .sidebar{
+        grid-row-start: 2 ;
+        grid-row-end: 4;
+    }
+    .Content1{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: yellow;
+            border: 3px solid black;
+            margin: 5px;
+            padding: 5px;
+
+            /* by default flex ki direction row wise hoti hai   */
+            display: flex;
+
+            /* flex-wrap: wrap; */
+            /* flex-flow: column-reverse; */
+            height: 1000px;
+
+
+            /* flex-direction: column; */
+            /* justify-content: center; */
+
+            /* align-items: center; */
+
+            /* agar hum shrink kr rahe hai aur jab jagah na rahe then
+             jab wo niche aayega */
+            /* to uske beech mein space nahi rahega */
+            /* align-content: start; */
+        }
+        .box{
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+            margin: 5px;
+            padding: 5px;
+        }
+        #box1{
+            background-color: green;
+
+            /* order aage piche kr skte hai kisi bhi cheez ka  */
+            /* order: 5; */
+
+            /* isse jab shrink karenge to ye 5 guna teji se shrink karega  */
+            /* flex-shrink: 5; */
+
+            /* flex-grow: 1; */
+        }
+        #box2{
+            background-color: burlywood;
+            /* flex-grow: 1; */
+
+            /* matlab box 2 centre mein aa jayega cross line ke
+             jo ki deafault horizontal hai  */
+            align-self: center;
+        }
+        #box3{
+            background-color: red;
+            /* flex-grow: 1; */
+        }
+        #box4{
+            background-color: purple;
+            /* flex-grow: 1; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"> <b>BOX1</b></div>
+        <div class="box" id="box2"><b>BOX2</b></div>
+        <div class="box" id="box3"><b>BOX3</b></div>
+        <div class="box" id="box4"><b>BOX4</b></div>
+    </div>
+</body>
+</html>
